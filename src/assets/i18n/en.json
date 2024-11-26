@@ -5,7 +5,18 @@
   "ru": "Russian",
   "de": "German",
   "fr": "French",
-  "title": "Title",
+  "title": "Blog Site",
   "welcome": "Welcome",
-  "hi": "Hi"
+  "hi": "Hi",
+  "footer_text": "All rights reserved",
+  "blog_title": "My Blog",
+  "welcome_message": "Welcome to my blog!",
+  "post_1_title": "First Post",
+  "post_1_content": "This is the content of the first post.",
+  "post_2_title": "Second Post",
+  "post_2_content": "This is the content of the second post.",
+  "post_3_title": "Third Post",
+  "post_3_content": "This is the content of the third post.",
+  "post_4_title": "Fourth Post",
+  "post_4_content": "This is the content of the fourth post."
 }

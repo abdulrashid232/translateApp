@@ -1,12 +1,35 @@
-<div>
-    <h1>{{ 'welcome' | translate }}</h1>
-    <div>
-      @for (language of languages; track language) {
-        <button (click)="changeLanguage(language)">
+<div class="navbar">
+  <div class="navbar-container">
+    <h1 class="logo">{{ 'Imabdel' | translate }}</h1>
+    <div class="language-switcher">
+      @for(language of languages;  track language){
+        <button  (click)="changeLanguage(language)">
           {{ language | translate }}
         </button>
       }
+    
     </div>
-    <router-outlet></router-outlet>
   </div>
-  <h1>{{ 'hi' | translate }}</h1>
+</div>
+
+<div class="main-content">
+  <div class="blog-header">
+    <h1>{{ 'welcome_message' | translate }}</h1>
+  </div>
+
+  <div class="blog-posts">
+    @for(post of blogPosts; track post){
+      <div class="post-card">
+        <h3>{{ post.title | translate }}</h3>
+        <p>{{ post.content | translate }}</p>
+      </div>
+
+    }
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <p>{{ 'footer_text' | translate }}</p>
+</footer>
